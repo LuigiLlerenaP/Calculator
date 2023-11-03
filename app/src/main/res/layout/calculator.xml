@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:layout_marginBottom="25dp"
+    >
+
+    <TextView
+        android:id="@+id/solution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result"
+        android:layout_marginBottom="141dp"
+        android:gravity="end|top"
+        android:paddingRight="60dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingRight="60dp"
+        android:text="@string/zero"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:layout_above="@+id/btn_gridlayout"/>
+
+    <GridLayout
+        android:id="@+id/btn_gridlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+>
+
+        <Button
+            android:id="@+id/btn_ac"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:layout_margin="@dimen/btn_margin"
+            android:backgroundTint="@color/black"
+            android:text="@string/ac"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop"
+            />
+
+
+        <Button
+            android:id="@+id/btn_parentheses"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/parentheses"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop"
+            />
+
+        <Button
+            android:id="@+id/btn_exponents"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/exponents"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size_large"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/divide"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size_large"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_seven"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/seven"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_eight"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/eight"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_nine"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/nine"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_times"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/times"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_four"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/four"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_five"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/five"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_six"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/six"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/minus"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size_large"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_one"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/one"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_two"
+            android:layout_margin="3dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/two"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_three"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/three"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/plus"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size_large"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_plus_minus_symbol"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/plus_minus_symbol"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_zero"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/zero"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_decimal_point"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/black"
+            android:text="@string/decimal_point"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/btn_text_size_large"
+            tools:targetApi="lollipop" />
+        <Button
+            android:id="@+id/btn_equals"
+            android:layout_margin="@dimen/btn_margin"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:backgroundTint="@color/orange"
+            android:text="@string/equals"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_text_size_large"
+            tools:targetApi="lollipop" />
+
+
+    </GridLayout>
+</RelativeLayout>
