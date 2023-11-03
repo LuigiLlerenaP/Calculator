@@ -70,8 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 result.setText("Error");
             }
         });
-
-
     }
     private void updateTextView(Button button, TextView textView) {
         button.setOnClickListener(v -> {
